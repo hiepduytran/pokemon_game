@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pokemon Battle</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href="./assets/css/style.css" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		
+	<section id="main-container" class="bullseye box-shadow-1 border-radius">
+		<section id="top-screen">
+			<img id="steelix-img" src="./assets/imgs/steelix-mega.gif" class="absolute" style="height: 150px; top: 56px; left: 53px; z-index: 100;"/>
+			<section id="user-name" class="absolute"></section>
+			<section id="user-lvl" class="absolute"></section>
+			<section class="absolute" style="width: 71px; top: 216px; left: 277px;">
+				<section id="user-health-bar" class="absolute"> </section>
+			</section>
+			<img src="./assets/imgs/your_info.png" class="absolute" style="height: 45px; top: 187px; right: 10px" />
+			
+			<img id="attack-img" src="./assets/imgs/attack.png" class="absolute hide" />
+			
+			
+			<img id="charizard-img" src="./assets/imgs/charizard-mega-y.gif" class="absolute" style="height: 200px; top: -28px; left: 141px" />
+			<section id="cpu-name" class="absolute"></section>
+			<section id="cpu-lvl" class="absolute"></section>
+			<section class="absolute" style="width: 71px; top: 39px; left: 72px;">
+				<section id="cpu-health-bar" class="absolute"> </section>
+			</section>
+			<img src="./assets/imgs/enemy_info.png" class="absolute" style="height: 45px; top: 10px; left: 10px;" />
+						
+			
+			<section id="chat-text" class="absolute text-subhead"></section>
+			
+			
+			<img src="./assets/imgs/grass.png" class="img-spacing" style="height: 235px ;width: 400px;" />
+			<img src="./assets/imgs/chat_window.png" class="img-spacing" style="position: absolute; height: 77px; width: 400px; top: 235px; right: 0; z-index: -1;" />
+		</section>
+		<section id="bottom-screen">
+			<section id="user-buttons" class="hide">
+				<section id="move1-button" class="pointer" value="0">
+					<section id="move1-text" class="absolute text-18 text-center"></section>
+					<img src="./assets/imgs/move.png" class="absolute" style="height: 75px; bottom: 170px; left: 20px;" />
+				</section>
+				
+				<section id="move2-button" class="pointer" value="1">
+					<section id="move2-text" class="absolute text-18 text-center"></section>
+					<img src="./assets/imgs/move.png" class="absolute" style="height: 75px; bottom: 170px; right: 20px;" />
+				</section>
+				
+				<section id="move3-button" class="pointer" value="2">
+					<section id="move3-text" class="absolute text-18 text-center"></section>
+					<img src="./assets/imgs/move.png" class="absolute" style="height: 75px; bottom: 75px; left: 20px;" />
+				</section>
+				
+				<section id="move4-button" class="pointer" value="3">
+					<section id="move4-text" class="absolute text-18 text-center"></section>
+					<img src="./assets/imgs/move.png" class="absolute" style="height: 75px; bottom: 75px; right: 20px;" />
+				</section>
+				
+			</section>
+			
+			<section id="win" class="absolute text-30 text-center hide">WINNER</section>
+			<section id="lose" class="absolute text-30 text-center hide">LOSER</section>
+			<img src="./assets/imgs/toolbar_bg.png" class="img-spacing" style="width: 400px; height: 319px;" />
+			
+			
+		</section>
+	
+	
+	
+	</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
+
