@@ -186,9 +186,7 @@ var playerTurn = {
 			
 			if(currentUserMove.type == "Attack"){
 				setTimeout(attackingMove, 1500);
-			} else {
-				setTimeout(defensiveMove, 1500);
-			}
+			} 
 		};
 		
 		var showMoveAnimation = function(){
@@ -213,13 +211,6 @@ var playerTurn = {
 			loop();
 		};
 		
-		var defensiveMove = function(){
-			$("#attack-img").addClass("hid");
-			$("#attack-img").removeClass("user-attack-img");
-			cpuPokemon.effect = currentUserMove.power;
-			currentState = cpuTurn;
-			loop();
-		};
 		
 		//This is how to use multiple selectors in jquery
 		$("#move1-button, #move2-button, #move3-button, #move4-button").unbind().click(function(){
